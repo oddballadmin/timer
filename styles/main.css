@@ -1,0 +1,52 @@
+body{
+    background-color: beige;
+}
+
+.applet{
+    display: flex;
+    flex-flow: column nowrap; 
+    width: 50%;
+    margin: 0 auto;
+    background-color: azure;
+}
+.app-title{
+    text-align: center;
+}
+.timer-header{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.h-item{
+    display: flex;
+    flex-flow: row nowrap;
+    line-height: 2em;
+    align-items: center;
+}
+.h-item > *{
+    font-size: 1.25em;
+    margin: .5em;
+}
+.timer-btn-container{
+    font-size: .75em;
+}
+.timer-app{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(29, 29, 29);
+}
+.t-item{
+    color: aliceblue;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.t-item > *{
+    padding: 0 .1em;
+    letter-spacing: .1em;
+}

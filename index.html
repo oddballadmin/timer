@@ -8,11 +8,11 @@
     <title>Timer App</title>
 </head>
 <body>
-    <div class="applet">
+    <div class="applet" id="app">
        <div class="app-title"><h1>Timer App</h1></div>
        <div class="timer-header">
-        <div class="h-item"id="timer-amount"><h5>Timer Amount: </h5><p>00:00</p></div>
-        <div class="h-item"id="timer-amount-left "><h5>Time Left</h5>00:00</div>
+        <div class="h-item"><h5>Timer Amount: </h5><p id="timer-amount">00:00</p></div>
+        <div class="h-item"><h5>Time Left</h5 id="timer-amount-left ">00:00</div>
         <div class="h-item timer-btn-container ">
             <button id="timer-reset" type="reset">Reset</button>
             <button id="timer-submit" type="submit">Submit</button>
@@ -25,10 +25,11 @@
         
        </div>
        <div class="timer-app">
-        <div class="t-item" id="hours"><h2>00</h2><h5>Hours</h5></div>
-        <div class="t-item" id="minutes"><h2>00</h2><h5>Minutes</h5></div>
-        <div class="t-item" id="seconds"><h2>00</h2><h5>Seconds</h5></div>
+        <div class="t-item"><h2 id="hours">00</h2><h5>Hours</h5></div>
+        <div class="t-item"><h2 id="minutes">00</h2><h5>Minutes</h5></div>
+        <div class="t-item"><h2 id="seconds">00</h2><h5>Seconds</h5></div>
        </div>
     </div>
+    <script src="./scripts/app.js"></script>
 </body>
 </html>

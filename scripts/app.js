@@ -28,7 +28,31 @@ SUBMIT_BTN.addEventListener('click', () => {
     let secondsSet = secondInputDom.value;
     let minutesSet = minuteInputDom.value;
     let hoursSet = hourInputDom.value;
+    let time = getCurrentTime();
+    formatTime(time);
+    
+    let timeElems = [time.getHours(),time.getMinutes(),time.getSeconds()];
+    console.log(timeElems);
     timerSetLbl.textContent = (`${hoursSet}:${minutesSet}:${secondsSet}`);
-    startCountDown(hoursSet,minutesSet,secondsSet);
+    startCountDown(time,hoursSet,minutesSet,secondsSet);
 });
 
+const startCountDown = (currentTime,hoursSet,minutesSet,secondsSet)=>{
+    let initiatedTime  = currentTime;   
+    
+};
+const getCurrentTime = ()=>{
+    let currentTime = new Date();
+    return currentTime;
+};
+const formatTime = (time) =>{
+    let unformatedTime = time;
+    if(unformatedTime.getHours() > 12){
+        let h = unformatedTime.getHours();
+        let formatedTime = time.setHours(h-12);
+        return time;
+    }
+    else{
+        return;
+    }
+};
